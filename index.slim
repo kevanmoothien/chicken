@@ -1,0 +1,31 @@
+.container
+  .row
+    .col-xs-12
+      h2 ="Chickenize your text"
+  .row
+    .col-xs-12
+      .form-horizontal
+        .form-group
+          label.col-xs-3.control-label for="input" ="Your Text"
+          .col-xs-7
+            input.form-control type="text" id="input" placeholder="Your text"  onkeyup="chickenize()"
+  .row
+    .col-xs-12
+      h3 ="Output"
+  .row
+    .col-xs-12
+      .form-horizontal
+        .form-group
+          .col-xs-12
+            textarea#output class="form-control" rows="10"
+        .form-group
+          .col-xs-12
+            button.btn.btn-primary onclick="copyText()" ="Copy"
+            span#copied style="margin-left: 20px;display:none" ="Copied to clipboard"
+  .row
+    .col-xs-12
+      span ="Reference: "
+      a href="http://torso.me/chicken" ="http://torso.me/chicken"
+      
+  
+      
